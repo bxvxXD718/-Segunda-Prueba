@@ -1,0 +1,26 @@
+.home-page {
+  text-align: center;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+}
+
+.specialties {
+  margin-top: 30px;
+}
+
+.specialties h2 {
+  color: #00ff55;
+}
+
+.specialties ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.specialties li {
+  font-size: 18px;
+  margin: 10px 0;
+}

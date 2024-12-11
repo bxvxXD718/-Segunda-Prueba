@@ -1,0 +1,117 @@
+/* Estilo para la portada */
+.portada {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Puedes ajustar la altura según lo que necesites */
+  overflow: hidden;
+}
+
+.portada img {
+  position: relative;
+  width: 100%;  /* La imagen ocupará todo el ancho disponible */
+  height: auto;  /* La altura se ajusta automáticamente para mantener la relación de aspecto */
+  object-fit: contain;  /* La imagen se ajusta sin recortarse */
+}
+
+.texto-portada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* Centra el texto */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Da un efecto de sombra para que el texto sea más legible */
+  text-align: center;
+}
+
+.texto-portada h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo para el logo en la esquina superior izquierda sobre el fondo azul */
+.logo-mercys {
+  position: absolute;
+  top: 5px;  /* Más cerca de la parte superior */
+  left: 5px;  /* Más cerca de la parte izquierda */
+  display: flex;  /* Usamos flexbox para alinear el logo y el texto */
+  align-items: center;  /* Centra verticalmente el logo y el texto */
+  gap: 10px;  /* Espacio entre el logo y el texto */
+  z-index: 10;  /* Asegura que el logo esté por encima de otros elementos */
+  background-color: #00661a;  /* Color azul de fondo para el logo */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.logo-mercys img {
+  width: 60px;  /* Reducimos el tamaño del logo a 60px */
+  height: auto;  /* Mantiene la proporción del logo */
+}
+
+.logo-texto {
+  font-size: 1rem;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  color: white;  /* El color del texto será blanco para que se vea bien sobre el fondo azul */
+}
+
+/* Estilo para el título "Servicios que ofrecemos" */
+.titulo-servicios {
+  text-align: center;
+  margin-top: 30px; /* Un poco de espacio entre la imagen y el título */
+}
+
+.titulo-servicios h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+/* Estilo para las imágenes de servicios */
+.imagenes-servicios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.imagen-servicio {
+  width: 30%;  /* Cada imagen tendrá un tamaño de 30% del contenedor */
+  text-align: center;  /* Alineamos el texto al centro */
+}
+
+.imagen-servicio h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;  /* Color del título */
+}
+
+.imagen-servicio img {
+  width: 100%;  /* Las imágenes ocupan el 100% del ancho de su contenedor */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-servicio img:hover {
+  transform: scale(1.05);  /* Agrega un pequeño efecto al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #006622;  /* El mismo color azul que el logo */
+  color: white;
+  margin-top: 50px;  /* Espacio superior para separar del contenido anterior */
+  margin-bottom: 0;  /* Eliminamos cualquier espacio abajo del pie de página */
+  position: relative; /* Asegura que el pie de página se quede en la parte inferior */
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}

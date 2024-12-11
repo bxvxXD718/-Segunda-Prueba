@@ -1,0 +1,17 @@
+footer {
+  background-color: transparent;  /* Sin fondo negro */
+  color: black;  /* Color del texto en negro */
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo img {
+  width: 100px; /* Tamaño del logo */
+  margin-right: 10px;
+}

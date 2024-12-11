@@ -1,0 +1,41 @@
+/* Estilo para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #66cc77; /* Barra azul clara */
+  padding: 10px 20px;
+  position: fixed;  /* Para que la barra se quede fija en la parte superior */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
+}
+
+/* Estilo para el logo en la barra */
+.navbar .logo img {
+  width: 50px;  /* Tamaño pequeño para el logo */
+  height: auto;
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+.nav-links .nav-link {
+  color: white;  /* Color blanco para el texto */
+  text-decoration: none;  /* Sin subrayado */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto cuando se pasa el ratón sobre los enlaces */
+.nav-links .nav-link:hover {
+  background-color: #00662a;  /* Fondo azul oscuro */
+  color: #f1f1f1;  /* Cambia el color del texto a blanco */
+}

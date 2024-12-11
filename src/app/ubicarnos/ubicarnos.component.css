@@ -1,0 +1,95 @@
+/* Estilos generales */
+.ubicarnos-container {
+  padding: 20px;
+}
+
+.titulo-pagina {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.mapa-ubicacion iframe {
+  border: none;
+  border-radius: 8px;
+  width: 100%; /* El mapa ahora ocupa el 100% del ancho del contenedor */
+  height: 500px; /* Puedes ajustar la altura aquí, se recomienda algo grande */
+}
+
+.formulario-contacto {
+  margin-top: 30px;
+  padding: 20px; /* Espaciado dentro del formulario */
+  border-radius: 8px;
+  background-color: #f7f7f7; /* Fondo suave para diferenciarlo del mapa */
+}
+
+.formulario-contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Mayor padding para mejorar la accesibilidad */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+.form-group textarea {
+  min-height: 150px; /* Asegura que el área de texto sea más grande */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Ajustado para mejor tamaño */
+  background-color: #00661a;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b51e;
+}
+
+.mensaje-confirmacion {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(0, 255, 85);
+}
+
+@media screen and (max-width: 768px) {
+  /* Asegura que el mapa y el formulario se ajusten en pantallas más pequeñas */
+  .mapa-ubicacion iframe {
+    height: 300px;
+  }
+
+  .formulario-contacto {
+    padding: 15px;
+  }
+
+  .formulario-contacto form {
+    width: 90%; /* Aumenta el tamaño del formulario en pantallas pequeñas */
+  }
+}
